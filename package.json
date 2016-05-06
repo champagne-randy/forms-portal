@@ -1,0 +1,34 @@
+{
+  "name": "forms-portal",
+  "version": "0.0.1",
+  "description": "This is a MEAN stack app we use to manage various forms",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icenetworktv/forms-portal.git"
+  },
+  "keywords": [
+    "ICE",
+    "Network",
+    "Involved",
+    "Community",
+    "Engagement",
+    "Startup",
+    "Television",
+    "TV",
+    "Network",
+    "Atlantic",
+    "City",
+    "New",
+    "Jersey"
+  ],
+  "author": "@randychampagne",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/icenetworktv/forms-portal/issues"
+  },
+  "homepage": "https://github.com/icenetworktv/forms-portal#readme"
+}
