@@ -10,18 +10,13 @@
   },
   "dependencies": {
     "body-parser": "~1.13.2",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.3.0",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
-    "express": "~4.13.1",
+    "express": "^4.13.4",
     "jade": "~1.11.0",
-    "mocha": "^2.4.5",
     "morgan": "~1.6.1",
-    "request": "^2.72.0",
-    "serve-favicon": "~2.3.0",
-    "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0"
+    "q": "^1.4.1",
+    "serve-favicon": "~2.3.0"
   },
   "repository": {
     "type": "git",
@@ -47,5 +42,13 @@
   "bugs": {
     "url": "https://github.com/icenetworktv/forms-portal/issues"
   },
-  "homepage": "https://github.com/icenetworktv/forms-portal#readme"
+  "homepage": "https://github.com/icenetworktv/forms-portal#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.4.5",
+    "request": "^2.72.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  }
 }
