@@ -37,8 +37,7 @@ beforeEach(function () {
 		display: sinon.stub()
 	};
 	this.proposalsSystem = currentProposalsSystem;
-}
-
+});
 
 
 
