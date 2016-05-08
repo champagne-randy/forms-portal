@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/_mocha -u bdd -R spec -t 500 --recursive",
+    "test:watch": "./node_modules/.bin/_mocha -u bdd -R spec -t 500 --recursive --watch"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
