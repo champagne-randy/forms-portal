@@ -1,12 +1,18 @@
 'use strict';
 
-var sinon = require('sinon'),
+var sinon 		= require('sinon'),
 	newRouteFor = require('../app'),
-	express = require('express'),
-	app = express(),
+	newClient 	= require('./support/client'),
+	express 	= require('express'),
+	app 		= express(),
 	server,
 	currentProposalsSystem,
-	port = process.env.PORT || 3000;
+	port 		= process.env.PORT || 3000;
+
+
+before(function () {
+	this.GET = newClient('http://localhost:' + port).GET;
+});
 
 
 before(
