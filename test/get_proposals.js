@@ -43,7 +43,7 @@ describe( 'GET /proposals', function() {
 
 		describe('will respond with an array of JSON objects', function() {
 			// TODO
-		})
+		});
 	});
 
 

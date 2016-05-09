@@ -15,7 +15,7 @@ before(function () {
 });
 
 
-before(
+before(function(callback) {
 	this.proposalsBaseURI = '/proposals';
 	app
 		.use(this.proposalsBaseURI, newRouteFor.proposals({
@@ -28,7 +28,7 @@ before(
 			server = this;
 			callback.apply(this, arguments);
 		});
-);
+});
 
 
 after(function(callback) {
