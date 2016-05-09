@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
    // minifycss   = require('gulp-minify-css'),
     jshint      = require('gulp-jshint'),
-    stylish     = require('jshint-stylish'),
+    stylish     = require('jshint-stylish');
     //uglify      = require('gulp-uglify'),
     //usemin      = require('gulp-usemin'),
     //imagemin    = require('gulp-imagemin'),
@@ -17,16 +17,16 @@ var gulp        = require('gulp'),
 
 
 // JShint task
-gulp.task('jshint', function() {
-  return gulp.src('./**/*.js')
+gulp.task('jshint:test', function() {
+  return gulp.src('test/**/*.js')
              .pipe(jshint())
              .pipe(jshint.reporter(stylish));
 });
 
 
 // Watch ***
-gulp.task('watch', function() {
+gulp.task('watch:test', ['jshint:test'], function() {
   // Watch .js files
-  gulp.watch('{./**/*.js}', ['jshint']);
+  gulp.watch('{test/**/*.js}', ['jshint:test']);
   
 });
