@@ -29,14 +29,17 @@ describe( 'GET /proposals', function() {
 					phone: "123456789",
 					title: "Serious Program",
 					categoryID: 4,
-					description: "The most important program to ever hit the airwaves"
+					description: "The most important-e program to ever hit the airwaves"
 				}
 			];
 			this.proposalsSystem.display
 				.returns(Q.fulfill(this.proposalsModel));
 		});
 
-		it('will respond with a 200 code');
+		it('will respond with a 200 code', function() {
+			return expect( this.GET(this.proposalsURI)).to.eventually
+					.have.property('status',200);
+		});
 
 		describe('will respond with an array of JSON objects', function() {
 			// TODO
