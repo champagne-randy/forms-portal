@@ -22,6 +22,15 @@ ICE Network is a startup in Atlantic City. We are launching a television network
 
 
 
+## Technical Highlights
+
+* ReST Web Service implemented with [Node](https://nodejs.org/en/) [Express](http://expressjs.com/) [Mongo](https://www.mongodb.com/)
+* Behavior-Driven Development test pipeline with [Mocha](https://mochajs.org/) [Chai](http://chaijs.com/) [Sinon](http://sinonjs.org/)
+* Promisifyed test cases using [chai-as-promised](https://github.com/domenic/chai-as-promised)
+
+
+
+
 ## Changelog
 
 ###0.0.1
