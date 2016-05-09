@@ -1,7 +1,8 @@
+/*jslint node: true */
 'use strict';
 
 var sinon 		= require('sinon'),
-	newRouteFor = require('../app'),
+	newRouteFor = require('../index'),
 	newClient 	= require('./support/client'),
 	express 	= require('express'),
 	app 		= express(),
@@ -20,8 +21,7 @@ before(function(callback) {
 	app
 		.use(this.proposalsBaseURI, newRouteFor.proposals({
 			display: function () {
-				return currentProposalsSystem.display.apply
-							(currentProposalsSystem, arguments);
+				return currentProposalsSystem.display.apply(currentProposalsSystem, arguments);
 			}
 		}))
 		.listen(port, function(callback) {
@@ -44,6 +44,7 @@ beforeEach(function () {
 	};
 	this.proposalsSystem = currentProposalsSystem;
 });
+
 
 
 

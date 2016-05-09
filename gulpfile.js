@@ -27,6 +27,6 @@ gulp.task('jshint:test', function() {
 // Watch ***
 gulp.task('watch:test', ['jshint:test'], function() {
   // Watch .js files
-  gulp.watch('{test/**/*.js}', ['jshint:test']);
+  gulp.watch('test/**/*.js}', ['jshint:test']);
   
 });
