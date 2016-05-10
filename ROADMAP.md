@@ -28,6 +28,7 @@ These are some ideas I am ruminating on
 
 * (done) model it after the recipe from the ConFusion project
 * find out why gulp watcher doesn't trigger new build after update in test/*.js
+* configure bulp build to (re)launch express server after each build
 
 
 
