@@ -5,7 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var proposals = require('./routes/proposals');
+var proposals = require('./routes/proposals'),
+    committees = require('./routes/committees');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // attach routes
 app.use('/proposals', proposals);
+app.use('/committees', committees);
 
 
 // catch 404 and forward to error handler
